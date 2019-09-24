@@ -1,8 +1,11 @@
 package com.serviceb.serviceb.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import com.serviceb.serviceb.model.DataModel;
+import com.serviceb.serviceb.model.JsonResult;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @RequestMapping("/")
@@ -17,4 +20,6 @@ public class ServiceAController {
     public Integer invokeAdd(int a ,int b){
         return a+b;
     }
+
+
 }
